@@ -4,8 +4,10 @@ body{
     color: aliceblue;
 }
 
+/* =========================================================================== */
+
 .navbar{
-    /* background-color: antiquewhite; */
+    background-color: rgb(88, 73, 52);
     height: 50px;
     width: 100%;
     display: flex;
@@ -60,4 +62,49 @@ body{
 .rightnav div:hover{
     border: 1px solid white;
     color: rgb(95, 176, 230);
+}
+
+/* =========================================================================== */
+
+.content{
+    margin-top: 2%;
+    background-color: rgb(70, 57, 38);
+    /* height: calc(100% - 50px); */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.post{
+    height: 500px;
+    width: 30%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.head{
+    margin-top: 2%;
+    background-color: aqua;
+    height: 10%;
+    width: 95%;
+}
+
+.body{
+    margin-top: 2%;
+    background-color: aqua;
+    height: 60%;
+    width: 95%;
+}
+
+.bottom{
+    margin-top: 2%;
+    background-color: aqua;
+    height: 25%;
+    width: 95%;
+    margin-bottom: 2%;
 }
