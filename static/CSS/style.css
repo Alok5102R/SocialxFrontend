@@ -2,6 +2,7 @@ body{
     margin: 0;
     background-color: black;
     color: aliceblue;
+    background-image: radial-gradient(circle, #43718a, #435c8a, #43488a);
 }
 
 
@@ -69,23 +70,25 @@ body{
 }
 
 .leftnav div{
+    border: 1px solid #43488a;
     padding: 1%;
-    border: 1px solid black;
 }
 
 .rightnav div{
-    border: 1px solid black;
+    border: 1px solid #43488a;
     padding: 1%;
 }
 
 .leftnav div:hover{
     border: 1px solid white;
     color: rgb(95, 176, 230);
+    box-shadow: 1px 1px 7px lightblue;
 }
 
 .rightnav div:hover{
     border: 1px solid white;
     color: rgb(95, 176, 230);
+    box-shadow: 1px 1px 7px lightblue;
 }
 
 .menu{
@@ -116,6 +119,7 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
+    box-shadow: 5px 5px 20px rgb(49, 98, 137);
 }
 
 .head{
