@@ -4,6 +4,22 @@ body{
     color: aliceblue;
 }
 
+
+/* ============================= Scroll Bar ============================================== */
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background: rgb(5, 27, 50);
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(27, 94, 169);
+}
+
+
 /* ============================= NavBar ============================================== */
 
 .navbar{
@@ -13,6 +29,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 5%;
 }
 
 .leftnav{
@@ -41,9 +58,10 @@ body{
 }
 
 .dp{
-    border: 1px solid white;
+    border: 1px solid white !important;
     border-radius: 50%;
-    width: 30px;
+    width: 35px;
+    height: 30px;
 }
 
 .dp img{
@@ -52,9 +70,11 @@ body{
 
 .leftnav div{
     padding: 1%;
+    border: 1px solid black;
 }
 
 .rightnav div{
+    border: 1px solid black;
     padding: 1%;
 }
 
@@ -83,6 +103,7 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 
 .post{
@@ -109,7 +130,6 @@ body{
 }
 
 .userimg{
-    border: 1px solid green;
     border-radius: 50%;
     width: 28px;
     height: 95%;
@@ -157,8 +177,14 @@ body{
     margin-top: 2%;
     width: 93%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 1%;
+}
+
+.controls div{
+    display: flex;
+    align-items: center;
 }
 
 .caption{
@@ -194,5 +220,10 @@ body{
 
     .menu{
         visibility: visible !important;
+    }
+
+    .post{
+        height: 55vmax;
+        width: 85%;
     }
 }
