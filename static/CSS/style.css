@@ -27,18 +27,32 @@ a{
 
 /* ============================= NavBar ============================================== */
 
+.navcontainer{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.navbackground{
+    background-color: rgb(172, 181, 181);
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    opacity: 0.7;
+}
+
 .navbar{
-    /* background-color: rgb(88, 73, 52); */
     height: 50px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 5%;
+    position: fixed;
+    z-index: 99;
 }
 
 .leftnav{
-    /* background-color: aquamarine; */
     height: 60%;
     width: 30%;
     margin-left: 1%;
@@ -47,10 +61,10 @@ a{
     padding-right: 1%;
     display: flex;
     align-items: center;
+    opacity: 1.0 !important;
 }
 
 .rightnav{
-    /* background-color: aquamarine; */
     height: 60%;
     width: 30%;
     margin-right: 1%;
@@ -74,25 +88,22 @@ a{
 }
 
 .leftnav div{
-    border: 1px solid #43488a;
+    border: 1px solid white;
     padding: 1%;
 }
 
 .rightnav div{
-    border: 1px solid #43488a;
     padding: 1%;
 }
 
 .leftnav div:hover{
-    border: 1px solid white;
-    color: rgb(95, 176, 230);
-    box-shadow: 1px 1px 7px lightblue;
+    color: rgb(21, 65, 94);
+    box-shadow: 3px 3px 7px lightblue;
 }
 
 .rightnav div:hover{
-    border: 1px solid white;
-    color: rgb(95, 176, 230);
-    box-shadow: 1px 1px 7px lightblue;
+    border-bottom: 2px solid white;
+    color: rgb(21, 65, 94);
 }
 
 .menu{
@@ -102,15 +113,14 @@ a{
 /* ========================== Post ================================================= */
 
 .content{
-    margin-top: 2%;
     margin-bottom: 6%;
-    /* background-color: rgb(70, 57, 38); */
     /* height: calc(100% - 50px); */
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    padding-top: 7%;  /* Used to seperate from fixed nav */
 }
 
 .post{
@@ -140,7 +150,7 @@ a{
 .userimg{
     border-radius: 50%;
     width: 28px;
-    height: 95%;
+    height: 70%;
 }
 
 .userimg img{
