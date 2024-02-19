@@ -97,10 +97,10 @@ a{
     padding: 1%;
 }
 
-.logoname:hover{
+/* .logoname:hover{
     color: rgb(21, 65, 94);
     box-shadow: 3px 3px 7px lightblue;
-}
+} */
 
 .rightnav div:hover{
     border-bottom: 2px solid white;
@@ -231,8 +231,22 @@ a{
     height: 5%;
     display: flex;
     align-items: center;
+    position: relative;
     justify-content: space-between;
     font-size: 1.2vmax;
+}
+
+.footerinner{
+    display: flex;
+    align-items: center;
+}
+
+.footerinner div{
+    height: 25px;
+    width: 25px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -242,6 +256,10 @@ a{
 {
     .rightnav div{
         visibility: hidden;
+    }
+
+    .rightnav div:hover{
+        border-bottom: none;
     }
 
     .menu{

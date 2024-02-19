@@ -33,3 +33,9 @@
     white-space: nowrap;
     padding: 5px 5px;
 }
+
+.spn{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+}
