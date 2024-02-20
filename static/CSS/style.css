@@ -107,11 +107,53 @@ a{
     color: rgb(21, 65, 94);
 }
 
+/* Dropdown Menu ---------| */
+
+.menucontainer{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    height: 1px;
+    width: 1px;
+    z-index: 9;
+    border-bottom: none;
+}
+
 .menu{
     visibility: hidden;
-    width: 1px;
-    height: 1px;
+    width: 3vmax;
+    height: 3vmax;
+    margin-top: 2.3vmax;
 }
+
+.menuitem{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(229, 232, 235);
+    width: 8vmax;
+    box-shadow: 3px 3px 15px rgb(73, 74, 75);
+    border-radius: 5px;
+    visibility: hidden;
+    padding: 5px;
+}
+
+.menuitem a{
+    text-decoration: none;
+    color: currentColor;
+    border-radius: 5px;
+    width: 90%;
+    padding: 5px;
+}
+
+.menucontainer a:hover{
+    background-color: rgb(81, 124, 161);
+    color: aliceblue;
+
+}
+
+/* Dropdown Menu ---------| */
 
 /* ========================== Post ================================================= */
 
@@ -264,11 +306,24 @@ a{
     .rightnav div:hover{
         border-bottom: none;
     }
+    
+    .menucontainer{
+        height: 8vmax;
+        width: 6vmax;
+    }
+
+    .menucontainer:hover .menuitem{
+        visibility: visible;
+    }
 
     .menu{
         visibility: visible !important;
         height: 3.5vmax;
         width: 3.5vmax;
+    }
+
+    .menuitem{
+        font-size: 1.5vmax !important;
     }
 
     .post{

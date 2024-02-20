@@ -20,7 +20,54 @@
 .container{
     display: flex;
     position: relative;
+    padding: 0px 10px;
 }
+
+/* Menu ============================= */
+
+.menucontainer{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    height: 8vmax;
+    width: 6vmax;
+    /* background-color: aqua; */
+    z-index: 9;
+}
+
+.menuitem{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(229, 232, 235);
+    width: 100%;
+    box-shadow: 3px 3px 15px rgb(73, 74, 75);
+    padding: 5px;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.menuitem a{
+    text-decoration: none;
+    color: currentColor;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+}
+
+.menucontainer:hover .menuitem{
+    visibility: visible;
+}
+
+.menucontainer a:hover{
+    background-color: rgb(81, 124, 161);
+    color: aliceblue;
+
+}
+
+
+
 
 /* Post */
 
