@@ -217,10 +217,12 @@ a{
     background-color: rgb(218, 225, 228);
     border-radius: 2%;
     padding: 1%;
+}
+
+.caption p{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    display: block;
 }
 
 /* ========================== Footer ================================================= */
@@ -256,6 +258,7 @@ a{
 {
     .rightnav div{
         visibility: hidden;
+        font-size: 1px;
     }
 
     .rightnav div:hover{
@@ -264,8 +267,8 @@ a{
 
     .menu{
         visibility: visible !important;
-        height: 8vmax;
-        width: 8vmax;
+        height: 3.5vmax;
+        width: 3.5vmax;
     }
 
     .post{
