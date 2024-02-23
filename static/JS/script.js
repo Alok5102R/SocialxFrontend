@@ -17,3 +17,12 @@
 // }
 
 // console.log(document.getElementById("signup").innerText);
+
+let uploadnavdiv = document.getElementById("uploadnavdiv");
+let uploadnav = () => {
+    uploadnavdiv.style.visibility = "visible";
+}
+
+let hideupload = () => {
+    uploadnavdiv.style.visibility = "hidden";
+}
