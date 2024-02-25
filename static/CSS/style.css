@@ -294,6 +294,65 @@ a{
 }
 
 
+/* ========================== Upload (upload.html) ================================================= */
+
+/* .uploadbox{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.uploadboxback{
+    position: absolute;
+    background-color: #c5c8cd; 
+    opacity: 0.3;
+    height: 37vw;
+    width: 35vw;
+    border-radius: 5px;
+    z-index: -22;
+}
+
+.uploadimg{
+    height: 37vw;
+    width: 35vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.uploadimgin{
+    height: 25vw;
+    width: 30vw;
+    background-color: #435c8a;
+    border: 2px dashed #d6d8db;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.uploadcaption{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.uploadcaption textarea{
+    width: 80%;
+    height: 5vw;
+    background-color: #91a1c0;
+    border: 2px solid rgb(153, 179, 208);
+    border-radius: 3px;
+    color: white;
+} */
+
 /* ========================== Media Query ================================================= */
 
 @media screen and (max-width: 650px)
