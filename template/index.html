@@ -11,12 +11,16 @@
     <body>
 
         <!-- Navbar ============================================= -->
+        <form id="searchForm" action="/search" method="POST">
+
         <div class="navcontainer">
             <div class="navbackground"></div> <!-- This will be used as a background of navbar which will be blurred-->
             <div class="navbar">
                 <div class="leftnav">
                     <div style="width: 40px; height: 35px;"><a href="#"><img src="../media/socialxlogo.svg" height="100%" width="100%"></a></div>
                     <div class="logoname"><a href="#"><b>SocialX</b></a></div>
+                    <div><input type="text" placeholder="search.." name="searchQuery" id="searchQuery"/></div>
+                    <div class="logoname"><button type="submit" style="border:none; background-color:transparent; cursor:pointer;">➡️</button></div>
                 </div>
                 <div class="rightnav">
                     <div><a href="#">Account</a></div>
@@ -36,6 +40,7 @@
                 </div>
             </div>
         </div>
+        </form>
         <!-- <div id="uploadnavdiv" style="display: flex; align-items: center; height: 42px; width: 100%; justify-content: center; visibility: hidden;">
             <div id="uploadnav" style="height: 40px; width: 75%; background-color: rgb(76, 95, 101); display: flex; align-items: center; justify-content: space-between; padding: 0px 10px; border-radius: 5px; box-shadow: 3px 3px 5px rgb(50, 55, 62); flex-direction: column;">
                 <div>Caption: <input type="text" name="caption"/> </div>
